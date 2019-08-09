@@ -9,7 +9,9 @@
     "launch": "npm start -- --launch",
     "tsc": "node -v",
     "test": "echo \"Error: no test specified\"",
-    "bundle": "gulp --cwd ./ --gulpfile ./node_modules/jovo-framework/gulpfile.js"
+    "bundle": "gulp --cwd ./ --gulpfile ./node_modules/jovo-framework/gulpfile.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "jovotech",
   "license": "Apache-2.0",
@@ -17,6 +19,8 @@
     "jovo-cms-airtable": "^2.2.5",
     "jovo-framework": "^2.2.6",
     "jovo-platform-alexa": "^2.2.8",
-    "jovo-plugin-debugger": "^2.2.5"
-  }
+    "jovo-plugin-debugger": "^2.2.5",
+    "snyk": "^1.215.0"
+  },
+  "snyk": true
 }
