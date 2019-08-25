@@ -8,7 +8,9 @@
     "start": "cd src && node index.js --webhook",
     "launch": "npm start -- --launch",
     "tsc": "node -v",
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "jovotech",
   "license": "Apache-2.0",
@@ -19,6 +21,8 @@
     "jovo-analytics-dashbot": "^2.2.4",
     "jovo-framework": "^2.2.6",
     "jovo-platform-alexa": "^2.2.8",
-    "jovo-platform-googleassistant": "^2.2.6"
-  }
+    "jovo-platform-googleassistant": "^2.2.6",
+    "snyk": "^1.218.0"
+  },
+  "snyk": true
 }
